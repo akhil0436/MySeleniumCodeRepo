@@ -10,7 +10,7 @@ public class handlewithRadioButtons {
 
 	public static void main(String[] args) {
 
-		ChromeDriver driver=new ChromeDriver();
+	ChromeDriver driver=new ChromeDriver();
 	driver.get("https://www.mercurytravels.co.in/");
 	
 	List<WebElement> radiobtn=driver.findElements(By.xpath("//input[@type='radio']"));
@@ -22,9 +22,9 @@ public class handlewithRadioButtons {
 		
 		String rtext=radiobtn.get(i).getAttribute("name");
 				
-if(radiobtn.get(i).isSelected()) {
+                if(radiobtn.get(i).isSelected()) {
 	
-	System.out.println(rtext+"  "+"Active");
+	    System.out.println(rtext+"  "+"Active");
 }		
 		
 		

@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="workingwithMultipleWindows.citibankWindowHandle">
+      <class name="workingwithDataDriven.zohoDDTLogin">
         <methods>
-          <include name="citibankoperations"/>
-          <include name="browser"/>
+          <include name="teardown"/>
+          <include name="openbrowser" invocation-numbers="0 1 2"/>
         </methods>
-      </class> <!-- workingwithMultipleWindows.citibankWindowHandle -->
+      </class> <!-- workingwithDataDriven.zohoDDTLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
