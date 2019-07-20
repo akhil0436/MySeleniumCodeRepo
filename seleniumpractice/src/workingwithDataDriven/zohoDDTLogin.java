@@ -35,9 +35,7 @@ public class zohoDDTLogin {
 		driver.findElement(By.xpath("//*[@id=\"signin_submit\"]")).click();
 		
 		Thread.sleep(5000);
-		
-		System.out.println(driver.getTitle());
-		
+				
 		Assert.assertTrue(driver.getTitle().contains("Zoho"), "User is not able to Login with corect credentials");
 		
 	}

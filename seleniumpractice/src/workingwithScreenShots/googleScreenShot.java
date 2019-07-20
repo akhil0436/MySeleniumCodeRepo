@@ -1,4 +1,4 @@
-package workingwithMouseActions;
+package workingwithScreenShots;
 
 import java.io.File;
 import java.io.IOException;
@@ -9,18 +9,18 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class flipkartoperations {
-
+public class googleScreenShot {
+	
 	
 	WebDriver driver;
+	File srcfile;
+	
 	@BeforeTest
-	public void openbrowser1() throws InterruptedException, IOException 
+	public void openbrow() throws InterruptedException, IOException 
 	{
 		driver=new ChromeDriver();
 		
@@ -31,15 +31,26 @@ public class flipkartoperations {
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		
 		driver.get("https://www.google.com/");
+
+	}
 		
-		File srcfile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(srcfile,new File("C:\\Users\\Welcome\\Desktop\\SC.PNG"));
+	@Test
+	public void TakeScreenShots() throws IOException, InterruptedException
+	{
+		
+		srcfile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(srcfile,new File("C:\\Users\\Welcome\\Desktop\\ScreenShots Images\\SC1.PNG"));
 		
 		Thread.sleep(6000);
 		
 		driver.findElement(By.xpath("//*[@id=\"tsf\"]/div[2]/div/div[1]/div/div[1]/input")).sendKeys("flipkart");
 		
+		
 		Thread.sleep(6000);
+		
+		srcfile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(srcfile,new File("C:\\Users\\Welcome\\Desktop\\ScreenShots Images\\SearchInflipkart.PNG"));
+
 
 		driver.findElement(By.xpath("//*[@id=\"tsf\"]/div[2]/div/div[2]/div[2]/ul/li[1]/div/div[1]/div/span")).click();
 		
@@ -51,39 +62,12 @@ public class flipkartoperations {
 		Thread.sleep(6000);
 
 		driver.findElement(By.xpath("/html/body/div[2]/div/div/button")).click();
-	}
-	
-	
-	@Test
-	public void mainoperations() throws InterruptedException
-	{
 		
-		WebElement ele=driver.findElement(By.xpath("//*[@id=\"container\"]/div/div[2]/div/ul/li[3]/span"));
-        
-		Thread.sleep(6000);
+		
+		srcfile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(srcfile,new File("C:\\Users\\Welcome\\Desktop\\ScreenShots Images\\flipkartHomePage.PNG"));
 
-        Actions act=new Actions(driver);
-        act.moveToElement(ele).build().perform();
-        
-        
-        driver.findElement(By.xpath("//*[@id=\"container\"]/div/div[2]/div/ul/li[3]/ul/li/ul/li[1]/ul/li[4]/a")).click();
-        
-		
 	}
-	
-	@Test
-	public void menshoes()
-	{
-		WebElement dragprice=driver.findElement(By.xpath("//*[@id=\"container\"]/div/div[3]/div[2]/div/div[1]/div/div/div/section[2]/div[3]/div[1]/div[1]"));
-		
-		Actions act1=new Actions(driver);
-		
-		int loction=dragprice.getLocation().y;
-		
-		act1.dragAndDropBy(dragprice, 50, loction).build().perform();
-		
-		
 	}
-	
-	
-}
+
+

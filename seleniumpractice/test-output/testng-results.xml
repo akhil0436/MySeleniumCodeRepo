@@ -1,73 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="88908" started-at="2019-07-05T11:23:27Z" finished-at="2019-07-05T11:24:56Z">
+  <suite name="Default suite" duration-ms="41051" started-at="2019-07-20T04:02:35Z" finished-at="2019-07-20T04:03:16Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="88908" started-at="2019-07-05T11:23:27Z" finished-at="2019-07-05T11:24:56Z">
-      <class name="workingwithDataDriven.zohoDDTLogin">
-        <test-method status="PASS" signature="openbrowser(java.lang.String, java.lang.String)[pri:0, instance:workingwithDataDriven.zohoDDTLogin@20e2cbe0]" name="openbrowser" duration-ms="30092" started-at="2019-07-05T16:53:27Z" data-provider="ZohoLoginData" finished-at="2019-07-05T16:53:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[akhil09866@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Akhil@123456]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="41051" started-at="2019-07-20T04:02:35Z" finished-at="2019-07-20T04:03:16Z">
+      <class name="workingwithScreenShots.googleScreenShot">
+        <test-method status="PASS" signature="openbrow()[pri:0, instance:workingwithScreenShots.googleScreenShot@2a2d45ba]" name="openbrow" is-config="true" duration-ms="8243" started-at="2019-07-20T09:32:35Z" finished-at="2019-07-20T09:32:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openbrowser -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:workingwithDataDriven.zohoDDTLogin@20e2cbe0]" name="teardown" is-config="true" duration-ms="952" started-at="2019-07-05T16:53:58Z" finished-at="2019-07-05T16:53:59Z">
+        </test-method> <!-- openbrow -->
+        <test-method status="PASS" signature="TakeScreenShots()[pri:0, instance:workingwithScreenShots.googleScreenShot@2a2d45ba]" name="TakeScreenShots" duration-ms="32770" started-at="2019-07-20T09:32:44Z" finished-at="2019-07-20T09:33:16Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="openbrowser(java.lang.String, java.lang.String)[pri:0, instance:workingwithDataDriven.zohoDDTLogin@20e2cbe0]" name="openbrowser" duration-ms="27734" started-at="2019-07-05T16:53:59Z" data-provider="ZohoLoginData" finished-at="2019-07-05T16:54:26Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[akhil09866@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Akhil@12345]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openbrowser -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:workingwithDataDriven.zohoDDTLogin@20e2cbe0]" name="teardown" is-config="true" duration-ms="763" started-at="2019-07-05T16:54:26Z" finished-at="2019-07-05T16:54:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="openbrowser(java.lang.String, java.lang.String)[pri:0, instance:workingwithDataDriven.zohoDDTLogin@20e2cbe0]" name="openbrowser" duration-ms="28519" started-at="2019-07-05T16:54:27Z" data-provider="ZohoLoginData" finished-at="2019-07-05T16:54:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[akhil09866@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Akhil@123456]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openbrowser -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:workingwithDataDriven.zohoDDTLogin@20e2cbe0]" name="teardown" is-config="true" duration-ms="809" started-at="2019-07-05T16:54:56Z" finished-at="2019-07-05T16:54:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- workingwithDataDriven.zohoDDTLogin -->
+        </test-method> <!-- TakeScreenShots -->
+      </class> <!-- workingwithScreenShots.googleScreenShot -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

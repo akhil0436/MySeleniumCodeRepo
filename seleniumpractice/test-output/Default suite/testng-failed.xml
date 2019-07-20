@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="workingwithDataDriven.zohoDDTLogin">
+      <class name="workingwithMouseActions.flipkartoperations">
         <methods>
-          <include name="teardown"/>
-          <include name="openbrowser" invocation-numbers="0 1 2"/>
+          <include name="mainoperations"/>
+          <include name="menshoes"/>
+          <include name="openbrowser1"/>
         </methods>
-      </class> <!-- workingwithDataDriven.zohoDDTLogin -->
+      </class> <!-- workingwithMouseActions.flipkartoperations -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
