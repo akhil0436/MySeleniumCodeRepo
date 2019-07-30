@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="workingwithMouseActions.flipkartoperations">
+      <class name="workingwithModularDrivenFramework.AddCompanyDetailsFreeCRM">
         <methods>
-          <include name="mainoperations"/>
-          <include name="menshoes"/>
-          <include name="openbrowser1"/>
+          <include name="AddCompanyFromExcelSheet"/>
+          <include name="MainOperatins"/>
         </methods>
-      </class> <!-- workingwithMouseActions.flipkartoperations -->
+      </class> <!-- workingwithModularDrivenFramework.AddCompanyDetailsFreeCRM -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

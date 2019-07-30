@@ -3,6 +3,7 @@
 	<name>seleniumpractice</name>
 	<comment></comment>
 	<projects>
+		<project>JavaPractice</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
