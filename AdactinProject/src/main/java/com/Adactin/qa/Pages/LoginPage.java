@@ -1,10 +1,12 @@
 package com.Adactin.qa.Pages;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.Adactin.qa.Base.TestBase;
+
 
 public class LoginPage extends TestBase{
 	
@@ -32,8 +34,8 @@ public class LoginPage extends TestBase{
 	//intializing the page objects.
 	public LoginPage()
 	{
-		
-		PageFactory.initElements(driver, this);
+
+		PageFactory.initElements(driver, LoginPage.class);
 		
 	}	
 	

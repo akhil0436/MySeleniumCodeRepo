@@ -62,6 +62,8 @@ public class ArrayListDemo {
 		EmployeeDetails emp3=new EmployeeDetails("Tom", "Architech", 48000);
 		
 		
+		System.out.println("---------------------------------");
+		
 		ArrayList<EmployeeDetails> aremp=new ArrayList<EmployeeDetails>();
 		
 		aremp.add(emp1);

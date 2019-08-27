@@ -21,14 +21,17 @@ public class LoginPageTest extends TestBase  {
 	@BeforeMethod
 	public void setUp()
 	{
-	    initialization();
+		openBrowser();
 		loginpage=new LoginPage();
+		
 	}
 	
 	
 	@Test(priority = 1)
 	public void LoginPageTitleTest()
 	{	
+		
+		
 		String verifytitle=loginpage.ValidateLoginPageTitle();	
 		
 		Assert.assertEquals(verifytitle, "AdactIn.com - Hotel Reservation System");	

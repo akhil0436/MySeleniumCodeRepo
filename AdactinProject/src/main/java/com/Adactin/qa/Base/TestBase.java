@@ -23,7 +23,7 @@ public class TestBase {
 		
 		try {
 			prop=new Properties();
-			FileInputStream fis=new FileInputStream("C:\\Users\\Welcome\\eclipse-workspace\\SeleniumPractice\\AdactinProject\\src\\main\\java\\com\\Adactin\\qa\\config\\config.properties");
+			FileInputStream fis=new FileInputStream("C:\\Users\\Welcome\\git\\MySeleniumCodeRepo\\AdactinProject\\src\\main\\java\\com\\Adactin\\qa\\config\\config.properties");
 			
 			prop.load(fis);
 		} 
@@ -45,7 +45,7 @@ public class TestBase {
 	}
 
 	
-	public static void initialization()
+	public static void openBrowser()
 
 	{
 		
